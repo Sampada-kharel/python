@@ -1,24 +1,65 @@
-## Rock Paper Scissors
+## Average Height
+
+# UPDATE
+We've moved away from repl.it for coding exercises.
+Check out the new exercises on Coding Rooms with automated submissions.
+
+Login to your Udemy course and head over to the link below to get the sign up link:
+
+[Click here](https://www.udemy.com/course/100-days-of-code/learn/lecture/17825914#questions)
 
 # Instructions
 
-Make a rock, paper, scissors game. 
+You are going to write a program that calculates the average student height from a List of heights. 
 
-Inside the `main.py` file, you'll find the ASCII art for the hand signals already saved to a corresponding variable: `rock`, `paper`, and `scissors`. This will make it easy to print them out to the console. 
+e.g. `student_heights = [180, 124, 165, 173, 189, 169, 146]`
 
-Start the game by asking the player:
+The average height can be calculated by adding all the heights together and dividing by the total number of heights. 
 
-*"What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."*
+e.g.
 
-From there you will need to figure out: 
-* How you will store the user's input.
-* How you will generate a random choice for the computer.
-* How you will compare the user's and the computer's choice to determine the winner (or a draw).
-* And also how you will give feedback to the player. 
+180 + 124 + 165 + 173 + 189 + 169 + 146 = **1146**
 
-You can find the "official" rules of the game on [the World Rock Paper Scissors Association website.](https://wrpsa.com/the-official-rules-of-rock-paper-scissors/)
+There are a total of **7** heights in `student_heights`
 
+1146 ÷ 7 = **163.71428571428572**
+
+Average height rounded to the nearest whole number = **164**
+
+**Important** You should not use the `sum()` or `len()` functions in your answer. You should try to replicate their functionality using what you have learnt about for loops.
+
+# Example Input 
+
+```
+156 178 165 171 187
+```
+
+In this case, student_heights would be a list that looks like: [156, 178, 165, 171, 187]
+
+# Example Output 
+
+```
+171
+```
+
+e.g. When you hit **run**, this is what should happen: 
+
+ 
+![](https://cdn.fs.teachablecdn.com/Nzb8hUVsQJ6STAGnvDCP)
+ 
+
+# Hint
+
+1. Remember to use the `round()` function to round the average height before you print it.
+
+# Test Your Code
+
+Before checking the solution, try copy-pasting your code into this repl: 
+
+[https://repl.it/@appbrewery/day-5-1-test-your-code](https://repl.it/@appbrewery/day-5-1-test-your-code)
+
+This repl includes my testing code that will check if your code meets this assignment's objectives. 
 
 # Solution
 
-[https://replit.com/@appbrewery/rock-paper-scissors-end](https://replit.com/@appbrewery/rock-paper-scissors-end)
+[https://repl.it/@appbrewery/day-5-1-solution](https://repl.it/@appbrewery/day-5-1-solution)
