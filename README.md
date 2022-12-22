@@ -1,56 +1,41 @@
-## Highest Score
-
-# UPDATE
-We've moved away from repl.it for coding exercises.
-Check out the new exercises on Coding Rooms with automated submissions.
-
-Login to your Udemy course and head over to the link below to get the sign up link:
-
-[Click here](https://www.udemy.com/course/100-days-of-code/learn/lecture/17825914#questions)
+## Password Generator
 
 # Instructions
 
-You are going to write a program that calculates the highest score from a List of scores. 
+The program will ask:
+```
+How many letters would you like in your password?
+```
+```
+How many symbols would you like?
+```
+```
+How many numbers would you like?
+```
+The objective is to take the inputs from the user to these questions and then generate a random password. Use your knowledge about Python lists and loops to complete the challenge. 
 
-e.g. `student_scores = [78, 65, 89, 86, 55, 91, 64, 89]`
+# Easy Version (Step 1)
 
-**Important** you are not allowed to use the max or min functions. The output words must match the example. i.e 
+Generate the password in sequence. If the user wants 
+* 4 letters
+* 2 symbols and
+* 3 numbers
 
-> `The highest score in the class is: x`
-
-# Example Input 
+then the password might look like this: 
 
 ```
-78 65 89 86 55 91 64 89
+fgdx$*924
 ```
+You can see that all the letters are together. All the symbols are together and all the numbers follow each other as well. Try to solve this problem first. 
 
-In this case, student_scores would be a list that looks like: `[78, 65, 89, 86, 55, 91, 64, 89]`
+# Hard Version (Step 2)
 
-# Example Output 
-
+When you've completed the easy version, you're ready to tackle the hard version. In the advanced version of this project the final password does not follow a pattern. So the example above might look like this:
 ```
-The highest score in the class is: 91
+x$d24g*f9
 ```
-
-e.g. When you hit **run**, this is what should happen: 
-
-  
-![](https://cdn.fs.teachablecdn.com/DnSPgYNSTgeHRJ3MinHg)
- 
-
-# Hint
-
-1. Think about the logic before writing code. How can you compare numbers against each other to see which one is larger?
-
-# Test Your Code
-
-Before checking the solution, try copy-pasting your code into this repl: 
-
-[https://repl.it/@appbrewery/day-5-2-test-your-code](https://repl.it/@appbrewery/day-5-2-test-your-code)
-
-This repl includes my testing code that will check if your code meets this assignment's objectives. 
-
+And every time you generate a password, the positions of the symbols, numbers, and letters are different. 
 
 # Solution
 
-[https://repl.it/@appbrewery/day-5-2-solution](https://repl.it/@appbrewery/day-5-2-solution)
+[https://replit.com/@appbrewery/password-generator-end](https://replit.com/@appbrewery/password-generator-end)
